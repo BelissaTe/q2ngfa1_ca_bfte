@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    background-color: #8584b9;
+}
+.links a{
+    margin-left:  1vw;
+}
+
+@media screen and ( max-width: 600px ){
+    nav {
+        position: relative;
+    }
+    .pagetitle {
+        background-color: white;
+        padding: 1vw;
+        color: black;
+  }
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+        z-index: 1;
+        background-color: #699aee;
+
+    }
+    .links a {
+        color: black;
+        padding: 12px 16px;
+        display: block;
+    }
+    .links a:hover{ background-color: white;}
+    nav:hover .links{display: block;}
+    nav:hover .pagetitle{background-color: azure;}
+}
